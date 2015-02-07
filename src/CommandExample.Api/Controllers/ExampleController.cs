@@ -9,6 +9,7 @@ namespace CommandExample.Api.Controllers
         // GET api/values
         public IEnumerable<string> Get()
         {
+            //TODO: Change this out to call CommandExample.Domain.Commands.GetExample
             return new[] {"value1", "value2"};
         }
 
