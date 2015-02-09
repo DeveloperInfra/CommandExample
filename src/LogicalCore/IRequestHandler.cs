@@ -5,7 +5,7 @@
     //    TResponse Handle(TRequest request);
     //}
 
-    public interface IRequestHandler<TRequest, TResponse>
+    public interface IRequestHandler<in TRequest, out TResponse>
     {
         TResponse Handle(TRequest request);
     }

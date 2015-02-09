@@ -2,10 +2,7 @@
 {
     public class Noop : IRequest<Unit>
     {
-        public Unit Execute()
-        {
-            return new Unit();
-        }
+
 
         public class Handler : IRequestHandler<Noop, Unit>
         {
