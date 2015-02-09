@@ -36,7 +36,6 @@
   <ItemGroup>
     <Compile Include="Commander.cs" />
     <Compile Include="Commands\GetExample.cs" />
-    <Compile Include="Commands\GetFileInfoList.cs" />
     <Compile Include="Commands\Noop.cs" />
     <Compile Include="IRequest.cs" />
     <Compile Include="IRequestHandler.cs" />
