@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandExample.Domain", "CommandExample.Domain\CommandExample.Domain.csproj", "{ADDE3059-F690-48BB-99AD-59513209AD41}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandExample.Api", "CommandExample.Api\CommandExample.Api.csproj", "{87280B44-3855-4FFE-BFB2-CF0A6ABE671E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicalCore", "LogicalCore\LogicalCore.csproj", "{E860295C-D359-4BD1-82DB-78972AC0FA47}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{87280B44-3855-4FFE-BFB2-CF0A6ABE671E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87280B44-3855-4FFE-BFB2-CF0A6ABE671E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87280B44-3855-4FFE-BFB2-CF0A6ABE671E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E860295C-D359-4BD1-82DB-78972AC0FA47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E860295C-D359-4BD1-82DB-78972AC0FA47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E860295C-D359-4BD1-82DB-78972AC0FA47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E860295C-D359-4BD1-82DB-78972AC0FA47}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

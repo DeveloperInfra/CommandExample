@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
+using LogicalCore;
 
 namespace CommandExample.Domain.Commands
 {
     public class GetExample : IRequest<List<string>>
     {
-        public Handler Commander = new Handler();
 
         // "params"
 

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CommandExample.Domain
+namespace LogicalCore
 {
     public sealed class Unit : IComparable
     {

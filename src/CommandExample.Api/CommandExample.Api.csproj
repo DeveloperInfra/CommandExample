@@ -79,12 +79,17 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Mediator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CommandExample.Domain\CommandExample.Domain.csproj">
       <Project>{adde3059-f690-48bb-99ad-59513209ad41}</Project>
       <Name>CommandExample.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LogicalCore\LogicalCore.csproj">
+      <Project>{e860295c-d359-4bd1-82db-78972ac0fa47}</Project>
+      <Name>LogicalCore</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
