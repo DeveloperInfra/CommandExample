@@ -2,11 +2,13 @@
 
 namespace CommandExample.Domain.Commands
 {
-    internal class GetExample : IRequest<List<string>>
+    public class GetExample : IRequest<List<string>>
     {
+        public Handler Commander = new Handler();
+
         // "params"
 
-        internal class Handler : IRequestHandler<GetExample, List<string>>
+        public class Handler : IRequestHandler<GetExample, List<string>>
         {
             public List<string> Handle(GetExample request)
             {

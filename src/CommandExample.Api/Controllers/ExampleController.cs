@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Web.Http;
+using CommandExample.Domain.Commands;
 
 namespace CommandExample.Api.Controllers
 {
@@ -9,14 +11,29 @@ namespace CommandExample.Api.Controllers
         // GET api/values
         public IEnumerable<string> Get()
         {
-            //TODO: Change this out to call CommandExample.Domain.Commands.GetExample
-            return new[] {"value1", "value2"};
+            var command = new GetExample();
+            // Optionally set params
+
+            return command.Commander.Handle(command);
         }
 
         // GET api/values/5
         public string Get(int id)
         {
-            return "value";
+            var command = new GetExample();
+            // Optionally set params
+
+            string response;
+            try
+            {
+                response = command.Commander.Handle(command)[id - 1];
+            }
+            catch (Exception ex)
+            {
+                response = ex.Message;
+            }
+
+            return response;
         }
 
         // POST api/values
